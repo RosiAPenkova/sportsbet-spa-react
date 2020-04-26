@@ -15,17 +15,18 @@ $theme-colors: (
     "section-bg": #ffffff,
 );
 
+$grid-gutter-width: 20px;
 
 // Font weight
 $font-weight-semibold: 600;
 
 // Font sizes
-$font-size-sm: 0.75rem;
-$font-size-md: 0.875rem;
-$font-size-mlg: 1rem;
-$font-size-lg: 1.25rem;
-$font-size-xlg: 1.5rem;
-$font-size-xxlg: 2rem;
+$font-size-sm:                  0.75rem;
+$font-size-md:                  0.875rem;
+$font-size-mlg:                 1rem;
+$font-size-lg:                  1.25rem;
+$font-size-xlg:                 1.5rem;
+$font-size-xxlg:                2rem;
 
 // Override fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
@@ -34,7 +35,18 @@ $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono',
 'Courier New', monospace;
 $font-family-base: $font-family-sans-serif;
 
+
+// Border radius
+$border-radius-xlg:            .5rem !default;
+$border-radius-xxlg:            1rem !default;
+
+// Buttons
+$btn-border-radius:             10rem;
+$btn-padding-x:                 1.25rem;
+
+
 // Components
+
 
 // Card
 $card-border-color: transparent;

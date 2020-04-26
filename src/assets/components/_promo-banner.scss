@@ -1,0 +1,16 @@
+.promo-banner {
+    flex: 1;
+    background-color: theme-color("section-bg");
+    border-radius: $border-radius-xxlg;
+    position: relative;
+
+    + .promo-banner {
+        margin-left: $grid-gutter-width;
+    }
+    .banner-info {
+        position: absolute;
+        padding: 2rem;
+        height: 100%;
+        width: 40%;
+    }
+}

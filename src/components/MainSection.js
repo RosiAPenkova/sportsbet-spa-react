@@ -5,7 +5,7 @@ import VideoContainer from './VideoContainer';
 const MainSection = props => {
 
     return (
-        <div className="d-flex">
+        <div className="d-flex main-section">
             <VideoContainer video={"https://www.youtube.com/embed/zpOULjyy-n8?rel=0"}/>
             <EventBoard/>
         </div>
