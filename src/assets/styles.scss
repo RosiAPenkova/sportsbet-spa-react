@@ -18,7 +18,7 @@
 
 // // Bootstrap components override
 @import "bootstrap-components/navbar";
-// @import "bootstrap-components/card";
+@import "bootstrap-components/card";
 
 
 // Custom components
@@ -26,3 +26,4 @@
 @import "components/video-container";
 @import "components/event-board";
 @import "components/promo-banner";
+@import "components/product-card";

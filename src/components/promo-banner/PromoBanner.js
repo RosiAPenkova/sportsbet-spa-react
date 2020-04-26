@@ -7,7 +7,7 @@ const PromoBanner = props => {
             <div className="banner-info d-flex flex-column justify-content-between">
                 <div className="promo-title">{props.title}</div>
                 <div className="promo-description">{props.description}</div>
-                <button type="button" className="btn btn-primary">Primary</button>
+                {props.children}
             </div>
             <img className="img-fluid" src={props.image}/>
         </div>
