@@ -1,5 +1,4 @@
-$fa-font-path: "~font-awesome/fonts";
-
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 $body-bg: #efefef;
 
 
@@ -14,6 +13,7 @@ $theme-colors: (
     "primary": #6a89fd,
     "primary-dark": #5968cb,
     "action": #ffd900,
+    "rating": #FFAB00,
     "secondary": #687b86,
     "action-secondary": #ff8f2b,
     "dark-overlay": #292d29,
@@ -29,6 +29,8 @@ $grid-gutter-width: 20px;
 $font-weight-semibold: 600;
 
 // Font sizes
+$font-size-xs:                  0.625rem;
+$font-size-sxs:                 0.6875rem;
 $font-size-sm:                  0.75rem;
 $font-size-md:                  0.875rem;
 $font-size-mlg:                 1rem;

@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 
 const Product = props => {
 
@@ -11,18 +12,14 @@ const Product = props => {
                 <div className="card-body">
                     <div className="d-flex">
                         <i className="fa fa-address-card"></i>
-                        <h5 className="card-title">{props.title}</h5>
+                        <div className="card-title-container">
+                            <h5 className="card-title">{props.title}</h5>
+                            <div className="card-title-description">{props.description}</div>
+                        </div>
                     </div>
-                    <p className="card-text">{props.description}</p>
 
                     <div className="d-flex justify-content-between">
-                        <div className="rating d-flex">
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                            <i className="fa fa-star" aria-hidden="true"></i>
-                        </div>
+                        <Rating rating={props.rating}/>
                         <span className="badge badge-pill badge-danger">Промоция</span>
                     </div>
                     <div className="d-flex justify-content-between product-info align-items-center">
@@ -33,8 +30,8 @@ const Product = props => {
                         <div className="price">123$</div>
                     </div>
                     <div className="d-flex">
-                        <button type="button" className="btn btn-primary card-button">Details</button>
-                        <button type="button" className="btn btn-outline-primary card-button">Demo</button>
+                        <button type="button" className="btn btn-outline-primary card-button">Details</button>
+                        <button type="button" className="btn btn-primary card-button">Action</button>
                     </div>
                 </div>
             </div>

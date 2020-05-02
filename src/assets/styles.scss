@@ -10,7 +10,9 @@
 // Import custom font from Google
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
 
-@import "~font-awesome/scss/font-awesome";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";
 
 // Load Bootstrap
 @import "~bootstrap/scss/bootstrap";
