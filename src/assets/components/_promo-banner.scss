@@ -1,6 +1,6 @@
 .promo-banner {
     flex: 1;
-    background-color: theme-color("section-bg");
+    background-color: theme-color("dark-backgroung");
     border-radius: $border-radius-xxlg;
     position: relative;
     box-shadow: $card-box-shadow;
@@ -10,27 +10,32 @@
     }
     .banner-info {
         position: absolute;
-        padding: 2rem;
+        padding: 2.5rem 0 2.5rem 2.5rem;
         height: 100%;
-        width: 40%;
+        width: 43%;
     }
 
     .promo-title {
         text-transform: uppercase;
-        font-size: $font-size-lg;
+        font-size: $font-size-xlg;
         font-weight: $font-weight-bold;
-        color: color-yiq(theme-color("section-bg"));
+        color: theme-color("section-bg");
     }
 
     .promo-description {
-        color: rgba(color-yiq(theme-color("section-bg")), .7);
+        color:theme-color("title");
+        font-size: $font-size-md;
+        line-height: 1.5rem;
     }
 
     .promo-button {
-        @include gradient-x(theme-color("primary-dark"), theme-color("primary"), 0%, 100%);
-        color: color-yiq(theme-color("primary-dark"));
+        width: 65%;
+        font-size: $font-size-md;
+        background-color: theme-color("light-green");
+        color: theme-color("section-bg");
+        font-weight: $font-weight-bold;
         &:hover {
-            @include gradient-x(lighten(theme-color("primary-dark"), 3%), lighten(theme-color("primary"), 3%), 0%, 100%);
+            background-color: theme-color("hover-green");
         }
     }
 

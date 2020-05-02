@@ -1,45 +1,36 @@
 import React, { useState } from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink,
+  NavbarBrand,
+ Dropdown, DropdownToggle, DropdownMenu, DropdownItem
 } from 'reactstrap';
-import { NavLink as RRNavLink } from 'react-router-dom';
+import Logo from '../assets/img/sportsbetio.png';
 
 const HeaderNavbar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <Navbar color="dark" dark expand="md">
+    const toggle = () => setDropdownOpen(prevState => !prevState);
+  
+    return (
+        <Navbar  dark expand="md">
         <div className="container">
-            <NavbarToggler onClick={toggle} />
-            <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-                <NavItem>
-                    <NavLink 
-                    tag={RRNavLink} 
-                    exact 
-                    to="/" 
-                    activeClassName="active"
-                    >Home</NavLink>
-                </NavItem>
-                <NavItem>
-                    <NavLink 
-                     tag={RRNavLink} 
-                     to="/gallery"
-                     activeClassName="active"
-                    >Gallery</NavLink>
-                </NavItem>
-            </Nav>
-            </Collapse>
-        </div>
+        <NavbarBrand href="/"> <img src={Logo} alt="Logo" /></NavbarBrand>
+      <Dropdown className="dropdown-btn" isOpen={dropdownOpen} toggle={toggle}>
+        <DropdownToggle caret>
+        English
+          </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem header>English</DropdownItem>
+          <DropdownItem>中文</DropdownItem>
+          <DropdownItem >Español</DropdownItem>
+          <DropdownItem>Português</DropdownItem>
+          <DropdownItem>Русский</DropdownItem>
+          <DropdownItem>Deutsch</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      </div>
     </Navbar>
-  );
+    );
 }
 
 export default HeaderNavbar;

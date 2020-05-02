@@ -9,9 +9,8 @@ import {
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
-import Gallery from './pages/Gallery';
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -32,20 +31,13 @@ function App() {
     <>
       <Provider store={store}>
         <Router>
-          {/* <FunctionalComponent count={1} step={1} />
-          <FunctionalComponent count={2} step={3} /> */}
-          <Switch>
+            <Switch>
             <Route path="/" exact>
               <Layout>
                 <Home/>
               </Layout>
             </Route>
-            <Route path="/gallery">
-              <Layout>
-                <Gallery/>
-              </Layout>
-            </Route>
-          </Switch>
+              </Switch>
         </Router>
       </Provider>
     </>

@@ -1,7 +1,27 @@
-.main-section {
-    margin-bottom: 5rem;
-    box-shadow: $card-box-shadow;
-}
+
 .promo-container {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+}
+
+h3{
+    font-weight: $font-weight-regular;
+    font-size: $font-size-lg;
+    line-height: 2rem;
+    color: theme-color("section-bg");
+}
+
+.unorder-list{
+    display: flex;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+.list{
+    list-style-type: none;
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    margin-left: 0px;
+
 }
