@@ -1,0 +1,29 @@
+.card-img {
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 0.75rem;
+}
+
+.card-container {
+    display: flex;
+    width: 15.75rem;
+}
+.card-title {
+    margin-left: 1rem;
+    display: flex;
+    font-size: $font-size-mlg;
+    color:theme-color("section-bg");
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: left;
+    flex-flow: column;
+    margin-top: 0.5rem
+}
+.popular-list {
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgb(49, 55, 63);
+}
