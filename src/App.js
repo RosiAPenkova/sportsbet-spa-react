@@ -11,6 +11,7 @@ import thunk from "redux-thunk";
 
 import Home from './pages/Home';
 import Navbar from './components/Navbar.js';
+import Footer from './components/footer/Footer';
 
 const store = createStore(reducers, applyMiddleware(thunk));
 
@@ -21,6 +22,7 @@ const Layout = props => {
       <div className="container pt-5">
         {props.children}
       </div>
+      <Footer></Footer>
     </>
   )
 }

@@ -1,8 +1,10 @@
 
-.promo-container {
+.promo-container, .promotion-container, .provider-container {
     margin-bottom: 1rem;
 }
-
+.footer-container {
+    margin-top: 1.5rem;
+}
 h3{
     font-weight: $font-weight-regular;
     font-size: $font-size-lg;
@@ -24,4 +26,8 @@ h3{
     flex: 0 0 auto;
     margin-left: 0px;
 
+}
+ul {
+    padding-left: 0;
+    list-style-type: none !important;
 }
